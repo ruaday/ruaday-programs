@@ -1,0 +1,10 @@
+{
+  "allowed_roots": [],
+  "apps": {
+    "pdf": "../RuaPDF.exe",
+    "find": "../RuaFind.exe",
+    "image": "../RuaImage.exe",
+    "helper": "../RuaHelper.exe"
+  },
+  "find_database": "../RuaFind.Data/index.db"
+}

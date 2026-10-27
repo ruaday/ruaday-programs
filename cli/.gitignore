@@ -1,0 +1,8 @@
+publish/
+artifacts/
+bin/
+obj/
+**/bin/
+**/obj/
+rua-cli.json
+*.log

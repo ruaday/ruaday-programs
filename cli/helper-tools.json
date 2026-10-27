@@ -1,0 +1,135 @@
+[
+  {
+    "name": "helper.list_windows",
+    "description": "RuaHelper list_windows (running app and MCP permission required)",
+    "inputSchema": {
+      "type": "object",
+      "properties": {},
+      "required": [],
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "helper.list_profiles",
+    "description": "RuaHelper list_profiles (running app and MCP permission required)",
+    "inputSchema": {
+      "type": "object",
+      "properties": {},
+      "required": [],
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "helper.attach",
+    "description": "RuaHelper attach (running app and MCP permission required)",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "processName": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "processName"
+      ],
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "helper.save_macro",
+    "description": "RuaHelper save_macro (running app and MCP permission required)",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "macro": {
+          "type": "object",
+          "required": [
+            "Name",
+            "Steps"
+          ],
+          "properties": {
+            "Name": {
+              "type": "string"
+            },
+            "Steps": {
+              "type": "array"
+            },
+            "Repeat": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100000
+            },
+            "Speed": {
+              "type": "number",
+              "minimum": 0.25,
+              "maximum": 4
+            },
+            "Hotkey": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "required": [
+        "macro"
+      ],
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "helper.run_macro",
+    "description": "RuaHelper run_macro (running app and MCP permission required)",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "helper.stop",
+    "description": "RuaHelper stop (running app and MCP permission required)",
+    "inputSchema": {
+      "type": "object",
+      "properties": {},
+      "required": [],
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "helper.overlay",
+    "description": "RuaHelper overlay (running app and MCP permission required)",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "visible": {
+          "type": "boolean"
+        },
+        "index": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "visible"
+      ],
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "helper.status",
+    "description": "RuaHelper status (running app and MCP permission required)",
+    "inputSchema": {
+      "type": "object",
+      "properties": {},
+      "required": [],
+      "additionalProperties": false
+    }
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "file": "vendor/Sqlite.cs",
+    "source": "src/RuaFind/Core/Sqlite.cs",
+    "sha256": "33377dc2975b982ba1427f806e5f6bde72eff011d4d2d39d54d4709f3b37cb01",
+    "license": "AGPL-3.0-or-later",
+    "modified": true,
+    "source_project": "RuaFind",
+    "distributed_sha256": "18ccbd5beb354aa0d30f9ad4e30c4753218f260e9dc3e36354d5b9015f9627a7"
+  },
+  {
+    "file": "vendor/Imaging.cs",
+    "source": "src/RuaImage/Core/Imaging.cs",
+    "sha256": "81456aca3454f3062d04ca3f8c9d214017495eeb1f66989770aaf149554cfa1a",
+    "license": "AGPL-3.0-or-later",
+    "modified": false,
+    "source_project": "RuaImage",
+    "distributed_sha256": "81456aca3454f3062d04ca3f8c9d214017495eeb1f66989770aaf149554cfa1a"
+  },
+  {
+    "file": "src/Engine.cs",
+    "source_project": "RuaMCP 1.0.0",
+    "license": "AGPL-3.0-or-later",
+    "modified": true,
+    "changes": "Shared Configure, Definitions and Invoke entry points; original file-processing and path checks retained.",
+    "distributed_sha256": "7135a67ae64a4da2bfd8c781f1bd76fd041f7006c798304c2a01bba007dfa6be"
+  }
+]
